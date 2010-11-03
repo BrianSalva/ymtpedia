@@ -16,6 +16,7 @@
 <td><a href="Login.html">Login</a>&nbsp;
 </td>
 <%
+//Getting user from the UI
 String user = (String) session.getAttribute("username");
 if(user!=null)
 {
