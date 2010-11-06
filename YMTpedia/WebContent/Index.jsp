@@ -8,6 +8,15 @@
 <LINK rel="stylesheet" type="text/css" href="commonstyle.css">
 </head>
 <body>
+<%
+String user = (String) session.getAttribute("username");
+if(user!=null)
+{
+%>
+<h3>Welcome,
+<%=user %>
+<%} %>
+</h3>
 <table align="right" class="layout">
 <tr>
 <td>
@@ -17,7 +26,7 @@
 </td>
 <%
 //Getting user from the UI
-String user = (String) session.getAttribute("username");
+
 if(user!=null)
 {
 %>
@@ -30,7 +39,7 @@ if(user!=null)
 <%} %>
 </tr>
 </table>
-
+<form name="Index" method="post" action="SearchResults.jsp">
 <table class="layout" border="0" width="60%" align="center">
 	<tr>
 		<td align="center"><img alt="" src="C:\Documents and Settings\mtaskeen\workspace\YMTpedia\WebContent\WEB-INF\images\HFA-Pedia.jpg" height="100" width="100"> </td>
@@ -51,10 +60,10 @@ if(user!=null)
 	</tr>
 	<tr align="center">
 	<td>
-	<input id="search" name="search" type="button" value="Search" onclick="">
+	<input id="search" name="search" type="submit" value="Search" onclick="SearchResults.jsp">
 	</td>
 	</tr>
 </table>
-
+</form>
 </body>
 </html>
