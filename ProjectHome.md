@@ -1,0 +1,1 @@
+A semantics search engine attempts to make sense of search results based on context. It automatically identifies the concepts structuring the texts. What this means is that if you search for 'election' a semantic search engine might retrieve documents containing the words 'vote', 'campaigning' and ‘ballot’ even if the word 'election' is not found in the source document.
